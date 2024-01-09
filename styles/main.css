@@ -1,6 +1,85 @@
+:root {
+    --color-pink: rgba(250, 66, 153, 1);
+    --color-gray: rgba(29, 44, 57, 1);
+    --color-light-gray: rgba(158, 163, 177, 1);
+    --color-white: rgba(255, 255, 255, 1);
+    --color--lighter-gray: rgba(221, 221, 221, 1);
+    --color--random-gray: rgba(166, 166, 166, 1);
+}
+
 body {
     width: 100%;
     height: 100vh;
     display: flex;
+    justify-content: center;
+    align-items: center;
     margin: unset;
+    background-color: var(--color-pink);
+    font-family: "Poppins", serif;
+}
+
+main {
+    width: 50%;
+    min-width: 290px;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--color-white);
+    padding: 20px;
+    gap: 10px;
+}
+
+button, input {
+    all: unset;
+    display: flex;
+    border: 1px solid var(--color--lighter-gray);
+    padding: 10px;
+    justify-content: center;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: var(--color-pink);
+    color: var(--color-white);
+}
+
+.btn-pink {
+    background-color: var(--color-pink);
+    color: var(--color-white);
+}
+
+.form-swap-btns {
+    width: 100%;
+    display: flex;
+}
+
+.form-swap-btns button {
+    flex: 1 1 50%;
+}
+
+form {
+    width: 100%;
+    margin: 10px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.input-line {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.warning {
+    color: var(--color-pink);
+}
+
+.link-signup {
+    color: var(--color-pink);
+    text-decoration-line: none;
+}
+.link-signup:hover {
+    text-decoration-line: underline;
 }
