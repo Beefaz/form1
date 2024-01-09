@@ -7,6 +7,10 @@
     --color--random-gray: rgba(166, 166, 166, 1);
 }
 
+* {
+    box-sizing: border-box;
+}
+
 body {
     width: 100%;
     height: 100vh;
@@ -66,20 +70,21 @@ form {
     gap: 20px;
 }
 
-.input-line {
+form .input-line {
     width: 100%;
     display: flex;
     flex-direction: column;
 }
 
-.warning {
+form .warning {
     color: var(--color-pink);
 }
 
-.link-signup {
+a {
     color: var(--color-pink);
     text-decoration-line: none;
 }
-.link-signup:hover {
+
+a:hover {
     text-decoration-line: underline;
 }

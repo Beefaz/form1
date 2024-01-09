@@ -15,17 +15,20 @@
         <button type="button" class="btn-pink">Login</button>
         <button type="button">Signup</button>
     </div>
-    <form>
-        <input type="email" placeholder="Email Address">
+    <form id="form1">
+        <label for="email" hidden>Email</label>
+        <input type="email" placeholder="Email Address" id="email">
         <div class="input-line">
-            <input type="password" placeholder="Password">
-            <small class="warning">Forgot password?</small>
+            <label for="password" hidden>Password</label>
+            <input type="password" placeholder="Password" id="password">
+            <a href="#"><small>Forgot password?</small></a>
         </div>
-        <button type="submit" class="btn-pink">Login</button>
+        <button type="submit" class="submit-btn btn-pink" form="form1" value="Submit">Login</button>
     </form>
     <div>
         Not a member?
-        <a href="#" class="link-signup">Signup Now</a>
+        <a href="#">Signup Now</a>
+    </div>
 </main>
 </body>
 </html>
